@@ -11,6 +11,7 @@ phonenumbers = "*"
 environ = "*"
 telebot = "*"
 django-modeltranslation = "*"
+gunicorn = "*"
 
 [dev-packages]
 
