@@ -6,6 +6,8 @@ from .forms import AdviceForm, ProductForm
 from django.utils.translation import gettext as _
 from django.utils.translation import get_language, activate, gettext
 import environ
+from django.conf import settings
+
 env = environ.Env()
 environ.Env.read_env()
 
@@ -26,7 +28,7 @@ def home(req):
         'partners': partners,
         'product_footer': product_footer,
         'customer': customer,
-        'functions': functions
+        'functions': functions,
     }
     return render(req, 'index.html', context)
 
