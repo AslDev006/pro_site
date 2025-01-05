@@ -30,6 +30,7 @@ INSTALLED_APPS = [
     'phonenumbers',
     'environ',
     'telebot',
+    'ckeditor',
     'modeltranslation',
     #LocalApps
     'models',

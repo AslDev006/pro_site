@@ -47,6 +47,7 @@ class ServiceModel(models.Model):
     photo = models.ImageField(upload_to="Services/")
     title = models.CharField(max_length=255)
     description = models.TextField()
+    little_desc = models.TextField()
     currency = models.DecimalField(decimal_places=2,max_digits=7, default=200.00)
     create_time = models.DateTimeField(auto_now_add=True)
     update_time = models.DateTimeField(auto_now=True)

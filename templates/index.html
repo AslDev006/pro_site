@@ -14,7 +14,7 @@
                             <div class="col-sm-10 col-lg-8">
                                 <h5 class="text-primary text-uppercase mb-3 animated slideInDown">{% blocktrans %}Mahsulotlar{% endblocktrans %}</h5>
                                 <h1 class="display-3 text-white animated slideInDown">{{ product.title }}</h1>
-                                <p class="fs-5 text-white mb-4 pb-2">{{ product.description | truncatewords:20 }}</p>
+                                <p class="fs-5 text-white mb-4 pb-2" style="color: #ffffff !important;">{{ product.little_desc | truncatewords:15 | safe }}</p>
                                 <a href="{% url 'form_page' product.id %}" class="btn btn-light py-md-3 px-md-5 animated slideInRight">{% blocktrans %}Buyurtma berish{% endblocktrans %}</a>
                             </div>
                         </div>
@@ -86,7 +86,7 @@
                         <div class="text-center p-4 pb-0">
                             <h3 class="mb-0">${{ product.currency }}</h3>
                             <div class="mb-3">
-                                {{ product.description | truncatewords:100 | safe}}
+                                {{ product.description | truncatewords:30 | safe}}
                             </div>
                             <h5 class="mb-4">{{ product.title }}</h5>
                         </div>

@@ -4,7 +4,7 @@ from .models import ServiceModel, PartnerModel, FunctionsModel, Customer_Opinion
 
 @register(ServiceModel)
 class ServiceOption(TranslationOptions):
-    fields = ('title', 'description')
+    fields = ('title', 'description', 'little_desc')
 
 @register(PartnerModel)
 class ServiceOption(TranslationOptions):
